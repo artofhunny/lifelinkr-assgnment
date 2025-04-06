@@ -624,7 +624,7 @@ footer{
 @media (max-width: 360px){
     .main-form input, .inp-container input, textarea{
         width: 100%;
-        font-size: 14px;
+        /* font-size: 14px; */
     }
 }
 
