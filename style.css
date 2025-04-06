@@ -616,9 +616,9 @@ footer{
     }
 
     .inp-container{
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
     }
-    
 }
 
 @media (max-width: 360px){
