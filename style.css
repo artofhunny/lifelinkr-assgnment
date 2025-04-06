@@ -621,6 +621,13 @@ footer{
     
 }
 
+@media (max-width: 360px){
+    .main-form input, .inp-container input, textarea{
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 350px) {
     .hero-section{
         padding: 0px 12px;
@@ -680,13 +687,6 @@ footer{
         font-size: 14px;
     }
    
-    .inp-container input, textarea{
-        width: 100%;
-        font-size: 16px;
-    }
-    .inp-container input::placeholder, textarea::placeholder{
-        font-size: 16px;
-    }
     .form-texts h1{
         font-size: 25px;
         text-align: center;
