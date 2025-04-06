@@ -1,0 +1,709 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #6d7785;
+    transition-duration: .5s;
+}
+.material-icons {
+    font-size: 24px; /* Adjust size */
+    color: #4aa0fc; /* Change color */
+    vertical-align: middle; /* Align with text */
+    margin-right: 8px; /* Add space between icon and text */
+    display: none;
+    z-index: 0;
+}
+header{
+    background-color: #e7e7e7;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+    /* position: sticky; */
+    top: 0;
+    background-color: #e7e7e7;
+    z-index: 20;
+}
+.navBar img{
+    width: 150px;
+    height: 50px;
+}
+.nav-items{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.nav-items ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.nav-items button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: blue;
+    background-color: white;
+}
+.nav-items ul li, button{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.nav-items a{
+    text-decoration: none;
+}
+.hero-form{
+    width: 50%;
+    padding: 20px 60px;
+    /* background-color: rgb(44, 26, 136); */
+    background: #203a6b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Lato', sans-serif;
+    gap: 35px;
+    border-radius: 16px;
+}
+.hero-form h1{
+    font-size: 40px;
+    color: white;
+}
+.hero-section{
+    display: flex;
+    gap: 10px;
+    padding: 20px 70px;
+    /* flex-wrap: wrap; */
+    /* margin-top: 20px; */
+}
+.inp{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.inp input{
+    padding: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    color: white;
+    width: 47%;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.inp input::placeholder{
+    color: white;
+}
+.agree{
+    align-self: flex-start;
+    /* align-items: start; */
+    font-size: 17px;
+    display: flex;
+    gap: 8px;
+}
+.agree p{
+    color: white;
+}
+.agree span{
+    color: rgb(235, 215, 0);
+}
+.demo-btn{
+    font-size: 16px;
+    font-weight: bold;
+    color: #1b315b;
+    padding: 20px 50px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+}
+.title{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(43, 43, 160);
+}
+.hero-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.fnt{
+    font-size: 20px;
+}
+.flx{
+    display: flex;
+    gap: 80px;
+}
+.flx .flx-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#chk-box, .icon{
+    display: none;
+}
+
+/* CARDS */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    width: 250px;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: .1px .1px 40px .1px rgb(224, 224, 224);
+}
+.card:hover{
+    background-color: #4aa0fc;
+    transform: translateY(-20px);
+}
+
+/* .card:hover, */
+.card:hover h3,
+.card:hover p,
+.card:hover span {
+    color: white;
+}
+
+.card-container{
+    background-color: #f3f3f3;
+    display: flex;
+    padding: 50px 70px;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.card span{
+    font-size: 65px;
+}
+.card p{
+    text-align: center;
+}
+.card h3{
+    font-weight: normal;
+    color: rgb(70, 70, 249);
+}
+.why-rybbon img{
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+}
+.container{
+    background-color: #f3f3f3;
+    padding: 20px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box{
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 20px;
+}
+.why-rybbon{
+    width: 680px;
+    display: flex;
+    /* border: 2px solid black; */
+    gap: 20px;
+    border-radius: 10px;
+    /* padding-right: 20px; */
+    box-shadow: 5px 5px 4px rgb(242, 242, 242);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+.why-rybbon p{
+    font-size: 18px;
+    word-spacing: 9px;
+    margin-top: 20px;
+}
+.why-rybbon h2{
+    font-weight: normal;
+    color: rgb(41, 41, 201);
+}
+.why-heading{
+    font-size: 40px;
+    color: rgb(41, 41, 201);
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.benefits-container img{
+    width: 230px;
+    height: 160px;
+}
+.benefits-container p{
+    font-size: 18px;
+}
+.benefits-container p span{
+    color: rgb(41, 41, 201);
+    font-weight: bold;
+}
+.benefits-container{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    justify-content: center;
+}
+.benefits-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.bnf{
+    text-align: center;
+}
+.faq-img{
+    width: 80%;
+    margin-bottom: 30px;
+}
+.faq{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.ques p{
+    font-size: 22px;
+    color: rgb(41, 41, 201);
+    cursor: pointer;
+}
+.ques{
+    display: flex;
+    justify-content: space-between;
+}
+.faq-rybbon{
+    width: 700px;
+    box-shadow: 5px 5px 40px rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 20px;
+}
+.ans{
+    display: none;
+}
+.main-form{
+    background-color: #203a6b;
+    color: white;
+    width: 800px;
+    padding: 30px 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.form-texts h1, .form-texts p{
+    color: white;
+}
+.form-texts h1{
+    font-size: 40px;
+}
+.form-texts p{
+    font-size: 20px;
+    text-align: center;
+}
+.form-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.form-texts span{
+    color: gold;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+.main-form input, textarea{
+    font-size: 20px;
+    padding: 6px 16px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 15px;
+    outline: none;
+}
+.inp-container input{
+    width: 280px;
+}
+.inp-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.main-form input::placeholder, textarea::placeholder{
+    color: white;
+}
+.frm-btn{
+    align-self: center;
+
+}
+.managing-art{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+.managing-art img{
+    width: 350px;
+    height: 180px;
+}
+.box-2{
+    background-color: white;
+    width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.demo-blue-btn{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1b315b;
+    padding: 20px 50px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+}
+.managing-art ul li{
+    word-spacing: 4px;
+    margin-bottom: 10px;
+}
+.managing-art-heading{
+    text-align: center;
+}
+footer{
+    display: flex;
+    gap: 30px;
+    background-color: #e7e7e7;
+    padding: 40px;
+}
+.footer-box-1 img{
+    width: 300px;
+}
+.footer-box-2{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-box-2 input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 6px;
+    border: 2px solid gray;
+}
+.footer-box-2 button{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 6px;
+    border: none;
+    background-color: #203a6b;
+    color: white;
+    border-radius: 4px;
+}
+.footer-box-2 p{
+    font-size: 25px;
+    color: rgb(36, 36, 36);
+}
+.footer-box-1 p{
+    color: rgb(112, 112, 223);
+    text-align: center;
+}
+.footer-box-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px){
+    .hero-form h1{
+        font-size: 30px;
+    }
+    .hero-form{
+        gap: 30px;
+        align-self: center;
+    }
+    .demo-btn{
+        padding: 15px 40px;
+    }
+    .title{
+        font-size: 35px;
+    }
+    .inp input{
+        font-size: 15px;
+    }
+    .nav-items ul{
+        gap: 24px;
+    } 
+    .nav-items{
+        gap: 30px;
+    }
+    .container{
+        padding: 20px 50px;
+    }
+    .box{
+        padding: 30px 30px;
+    }
+    
+}
+
+@media (max-width: 913px) {
+    .hero-section{
+        flex-wrap: wrap;
+        gap: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-1{
+        width: 100%;
+    }
+    .hero-form{
+        width: 80%;
+    }
+    .nav-items, .nav-items ul{
+        /* display: block; */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-items{
+        display: none;
+        position: absolute;
+        top: 90px;
+        background-color: white;
+        width: 100%;
+        height: 70vh;
+        left: 0;
+        padding: 20px;
+    }
+    .nav-items button{
+        border: 2px solid blue;
+    }
+    .icon{
+        display: block;
+        align-self: center;
+    }
+
+    #chk-box:checked ~ .nav-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-container{
+        padding: 30px 50px;
+        gap: 20px;
+    }
+    .card span{
+        font-size: 55px;
+    }
+    .why-rybbon{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        border-radius: 10px;
+        padding-right: 20px;
+        box-shadow: 5px 5px 4px rgb(242, 242, 242);
+        margin-bottom: 20px;
+    }
+    .container{
+        padding: 20px 50px;
+    }
+    .box{
+        padding: 30px 20px;
+    }
+    .faq-rybbon{
+        width: 100%;
+    }
+    .main-form, .box-2{
+        width: 100%;
+        padding: 30px 40px;
+    }
+    .inp-container input{
+        width: 50%;
+    }
+    .inp-container{
+        /* gap: 6px; */
+    }
+    .managing-art{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer{
+        padding: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-box-2 p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .fnt {
+        font-size: 16px;
+    }
+
+    .demo-btn {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
+    .hero-form h1 {
+        font-size: 30px;
+    }
+    .hero-section{
+        padding: 0px 30px;
+    }
+    .navBar{
+        padding: 30px;
+    }
+    .navBar img {
+        width: 120px;
+        height: auto;
+    }
+    .flx {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hero-form{
+        width: 100%;
+        padding: 30px;
+        gap: 30px;
+    }
+    .flx .flx-2 {
+        gap: 15px;
+    }
+    .inp{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .inp input{
+        width: 200px;
+    }
+    .container{
+        padding: 20px 0px;
+    }
+    .box{
+        padding: 30px 30px;
+    }
+    .why-rybbon h2{
+        font-size: 20px;
+    }
+    .why-rybbon p{
+        font-size: 16px;
+        word-spacing: normal;
+        margin-top: 10px;
+    }
+    .why-rybbon{
+        gap: 10px;
+        align-items: center;
+    }
+    .why-rybbon img{
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+
+@media (max-width: 350px) {
+    .hero-section{
+        padding: 0px 12px;
+    }
+    /* .navBar{
+        padding: 15px;
+    } */
+    .hero-form h1{
+        font-size: 20px;
+    }
+    .hero-form{
+        gap: 15px;
+        padding: 20px;
+    }
+    .inp input{
+        font-size: 12px;
+    }
+    .card-container{
+        padding: 30px 12px;
+        gap: 20px;
+    }
+    .card span{
+        font-size: 35px;
+    }
+    .card h3{
+        font-size: 18px;
+    }
+
+    .box{
+        padding: 30px 12px;
+    }
+    .why-rybbon h2{
+        font-size: 18px;
+    }
+    .why-rybbon p{
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .why-rybbon{
+        gap: 6px;
+    }
+    .why-rybbon img{
+        width: 100px;
+        height: 100px;
+    }
+    .why-heading{
+        font-size: 25px;
+    }
+    .ques p{
+        font-size: 16px;
+    }
+    .faq-rybbon{
+        gap: 10px;
+        padding: 10px;
+    }
+    .ans{
+        font-size: 14px;
+    }
+    .inp-container{
+        flex-wrap: wrap;
+    }
+    .inp-container input, textarea{
+        width: 100%;
+        font-size: 16px;
+    }
+    .form-texts h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .form-texts p{
+        font-size: 15px;
+    }
+    .main-form, .box-2{
+        padding: 20px 18px;
+        gap: 15px;
+    }
+    .managing-art img{
+        width: 98%;
+    }
+    .demo-blue-btn{
+        padding: 15px 30px;
+    }
+    .footer-box-1 img{
+        width: 98%;
+    }
+    footer{
+        padding: 20px 12px;
+    }
+
+}
