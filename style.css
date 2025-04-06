@@ -614,6 +614,10 @@ footer{
         width: 100px;
         height: 100px;
     }
+
+    .inp-container{
+        flex-wrap: wrap;
+    }
     
 }
 
@@ -675,11 +679,12 @@ footer{
     .ans{
         font-size: 14px;
     }
-    .inp-container{
-        flex-wrap: wrap;
-    }
+   
     .inp-container input, textarea{
         width: 100%;
+        font-size: 16px;
+    }
+    .inp-container input::placeholder, textarea::placeholder{
         font-size: 16px;
     }
     .form-texts h1{
