@@ -104,6 +104,18 @@ header{
     font-size: 17px;
     display: flex;
     gap: 8px;
+    /* background-color: aqua; */
+}
+.agr{
+    display: flex;
+    align-items: start;
+    align-items: center;
+}
+.agr label, .agr label span{
+    color: white;
+}
+.agree input{
+    align-self: center;
 }
 .agree p{
     color: white;
@@ -709,6 +721,9 @@ footer{
     }
     footer{
         padding: 20px 12px;
+    }
+    .agr label{
+        font-size: 12px;
     }
 
 }
